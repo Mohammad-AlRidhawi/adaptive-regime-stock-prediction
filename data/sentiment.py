@@ -9,8 +9,8 @@ class SentimentLoader:
     """Loads the CSS daily sentiment scores produced by the fine-tuned BERT classifier.
 
     Sentiment is computed offline by the BERT pipeline released alongside the
-    prior NodeFormer-BERT work (alridhawi2025nodeformer). For each stock and
-    trading day, the score is in [-1, +1]; days with no posts default to 0.
+    prior NodeFormer-BERT work (Al Ridhawi et al., IEEE Access, 2026). For each
+    stock and trading day, the score is in [-1, +1]; days with no posts default to 0.
     """
 
     def __init__(self, parquet_path: str | Path):

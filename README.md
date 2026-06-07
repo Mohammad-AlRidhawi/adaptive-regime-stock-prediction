@@ -44,7 +44,7 @@ pip install -e .
 The framework expects two complementary data streams:
 
 - **Financial market data (FMD)**: daily OHLCV for 20 S&P 500 stocks from January 1982 to March 2025 (Yahoo Finance via `yfinance`).
-- **Sentiment data**: daily aggregated sentiment scores per stock, produced by a fine-tuned BERT classifier applied to the Comprehensive Stock Sentiment (CSS) dataset introduced in our prior work (`alridhawi2025nodeformer`).
+- **Sentiment data**: daily aggregated sentiment scores per stock, produced by a fine-tuned BERT classifier applied to the Comprehensive Stock Sentiment (CSS) dataset introduced in our prior work (Al Ridhawi et al., IEEE Access, 2026).
 
 Place raw OHLCV CSV files under `data/raw/ohlcv/` (one CSV per ticker) and the daily sentiment matrix under `data/raw/sentiment/css_daily_scores.parquet`. The data loaders handle the rest (technical indicators, expanding-window z-score, train/validation/test splits).
 
