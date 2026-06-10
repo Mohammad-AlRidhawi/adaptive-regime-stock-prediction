@@ -14,7 +14,7 @@ class Stock:
 STOCK_UNIVERSE: list[Stock] = [
     Stock("AAPL", "Apple", "Technology", 1982),
     Stock("MSFT", "Microsoft", "Technology", 1986),
-    Stock("CRM", "Salesforce", "Technology", 1999),
+    Stock("CRM", "Salesforce", "Technology", 2004),
     Stock("JPM", "JPMorgan Chase", "Financial Services", 1982),
     Stock("V", "Visa", "Financial Services", 2008),
     Stock("JNJ", "Johnson & Johnson", "Healthcare", 1982),
